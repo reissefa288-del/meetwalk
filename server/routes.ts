@@ -1,3 +1,6 @@
+import type { Express } from "express";
+import { createServer } from "node:http";
+import { storage } from "./storage";
 import { insertUserSchema, insertLikeSchema, insertMessageSchema } from "./schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
