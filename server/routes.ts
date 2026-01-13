@@ -1,7 +1,4 @@
-import type { Express } from "express";
-import { createServer, type Server } from "node:http";
-import { storage } from "./storage";
-import { insertUserSchema, insertLikeSchema, insertMessageSchema } from "../schema";
+import { insertUserSchema, insertLikeSchema, insertMessageSchema } from "./schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/users", async (req, res) => {
