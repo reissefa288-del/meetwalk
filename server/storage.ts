@@ -1,4 +1,4 @@
-import { users, likes, matches, messages, type User, type InsertUser, type Like, type InsertLike, type Match, type InsertMatch, type Message, type InsertMessage } from "@shared/schema";
+import { users, likes, matches, messages, type User, type InsertUser, type Like, type InsertLike, type Match, type InsertMatch, type Message, type InsertMessage } from "../schema";
 import { db } from "./db";
 import { eq, and, or, sql, desc, ne, notInArray } from "drizzle-orm";
 
